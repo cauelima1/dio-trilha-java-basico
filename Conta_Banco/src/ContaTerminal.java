@@ -4,7 +4,7 @@ import java.util.Locale;
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
         
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         System.out.println("Seja bem vindo, entre com o número de sua conta");
         int conta = scanner.nextInt();
